@@ -1,0 +1,263 @@
+/* Pisave so self-hostane (SIL OFL): Newsreader, Figtree, IBM Plex Mono.
+   latin-ext vsebuje č, š, ž. */
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/newsreader-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/newsreader-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/newsreader-latin-ext-400-italic.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/newsreader-latin-400-italic.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/figtree-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/figtree-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/ibm-plex-mono-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --ozadje: #E7E9DF;
+  --crnilo: #1E2B22;
+  --bledo: #3B4A40;
+  --sekundarno: #4A584F;
+  --mah: #3F5E2E;
+  --skorja: #7A5A3C;
+  --crta: #C3C9B8;
+
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--ozadje);
+  color: var(--crnilo);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+.stran {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--mah);
+  outline-offset: 3px;
+}
+
+.mono {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Zgornja vrstica */
+.vrh {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 28px;
+  color: var(--sekundarno);
+}
+
+.vrh a { text-decoration: none; }
+.vrh a:hover { text-decoration: underline; }
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 340px);
+  align-items: end;
+  gap: 24px 64px;
+  padding: 96px 0 80px;
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(72px, 15vw, 168px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: var(--mah);
+}
+
+.uvod {
+  margin: 0;
+  color: var(--bledo);
+}
+
+/* Razdelki */
+section { padding-bottom: 72px; }
+
+h2 {
+  margin: 0 0 20px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sekundarno);
+}
+
+.seznam {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.seznam li { border-top: 1px solid var(--crta); }
+.seznam li:last-child { border-bottom: 1px solid var(--crta); }
+
+.vrstica {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr) minmax(0, 460px);
+  align-items: baseline;
+  gap: 8px 32px;
+  padding: 28px 0;
+  text-decoration: none;
+}
+
+.vrstica .oznaka { color: var(--skorja); }
+
+.vrstica .ime {
+  font-family: var(--serif);
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.1;
+  color: var(--crnilo);
+}
+
+.manjse .vrstica .ime { font-size: clamp(24px, 3vw, 30px); }
+
+.vrstica .opis {
+  color: var(--bledo);
+  font-size: 1rem;
+}
+
+.vrstica:hover .ime { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.12em; }
+
+.vrstica:focus-visible { outline-offset: -2px; }
+
+.placeholder { color: var(--skorja); }
+
+/* Postaja */
+.postaja {
+  margin: 0;
+  text-transform: none;
+  padding-bottom: 72px;
+  color: var(--sekundarno);
+}
+
+/* Noga */
+footer {
+  border-top: 1px solid var(--crta);
+  padding: 28px 0 40px;
+}
+
+.noga {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  color: var(--sekundarno);
+  font-size: 0.9375rem;
+}
+
+.noga a { color: var(--bledo); }
+
+/* Podstran */
+.podstran .hero {
+  grid-template-columns: minmax(0, 1fr);
+  padding-bottom: 64px;
+}
+
+.podstran .uvod { max-width: 460px; }
+
+@media (max-width: 720px) {
+  .stran { padding: 0 20px; }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 64px 0 56px;
+  }
+
+  .vrstica {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+    padding: 22px 0;
+  }
+
+  section { padding-bottom: 56px; }
+}
